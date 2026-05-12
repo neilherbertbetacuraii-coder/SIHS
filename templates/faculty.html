@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}Faculty - {{ school.name }}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header py-5 bg-light">
+    <div class="container-fluid px-4">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold text-primary mb-2">Our Faculty</h1>
+                <p class="lead text-muted">Meet the dedicated educators shaping tomorrow's leaders</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-lg-end">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ url_for('about') }}">About</a></li>
+                        <li class="breadcrumb-item active">Faculty</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Faculty Content -->
+<section class="py-5">
+    <div class="container-fluid px-4">
+        <!-- Faculty Introduction -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="display-5 fw-bold mb-3">Dedicated Educators</h2>
+                <p class="lead text-muted">
+                    Our faculty consists of experienced professionals committed to providing quality education
+                    and mentorship to our students. Each member brings unique expertise and passion to their teaching.
+                </p>
+            </div>
+        </div>
+
+        <!-- Faculty Grid -->
+        <div class="row g-4">
+            <!-- Faculty Member 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 120px; height: 120px;">
+                            <i class="fas fa-user-tie fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Dr. Sarah Johnson</h5>
+                        <p class="text-primary mb-2">Principal</p>
+                        <p class="text-muted small mb-3">Ph.D. in Education, 15+ years experience</p>
+                        <p class="card-text text-muted">
+                            Leading our institution with vision and dedication, Dr. Johnson specializes in
+                            educational leadership and curriculum development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 120px; height: 120px;">
+                            <i class="fas fa-user-graduate fa-3x text-success"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Prof. Michael Chen</h5>
+                        <p class="text-success mb-2">Mathematics Department Head</p>
+                        <p class="text-muted small mb-3">M.Sc. Mathematics, 12+ years teaching</p>
+                        <p class="card-text text-muted">
+                            Passionate about making mathematics accessible and enjoyable for all students,
+                            with expertise in advanced calculus and statistics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 120px; height: 120px;">
+                            <i class="fas fa-user-ninja fa-3x text-info"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Ms. Emily Rodriguez</h5>
+                        <p class="text-info mb-2">Science Teacher</p>
+                        <p class="text-muted small mb-3">B.Sc. Biology, 8+ years experience</p>
+                        <p class="card-text text-muted">
+                            Dedicated to inspiring curiosity about the natural world through hands-on
+                            experiments and real-world applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 120px; height: 120px;">
+                            <i class="fas fa-user-edit fa-3x text-warning"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Mr. David Thompson</h5>
+                        <p class="text-warning mb-2">English Literature Teacher</p>
+                        <p class="text-muted small mb-3">M.A. English Literature, 10+ years teaching</p>
+                        <p class="card-text text-muted">
+                            Fostering a love for literature and developing strong communication skills
+                            through classic and contemporary works.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 120px; height: 120px;">
+                            <i class="fas fa-user-cog fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Ms. Lisa Park</h5>
+                        <p class="text-danger mb-2">Computer Science Teacher</p>
+                        <p class="text-muted small mb-3">B.Sc. Computer Science, 7+ years experience</p>
+                        <p class="card-text text-muted">
+                            Guiding students through the world of programming and technology,
+                            preparing them for the digital future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 120px; height: 120px;">
+                            <i class="fas fa-user-friends fa-3x text-secondary"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Mr. James Wilson</h5>
+                        <p class="text-secondary mb-2">Physical Education Teacher</p>
+                        <p class="text-muted small mb-3">B.Sc. Sports Science, 9+ years teaching</p>
+                        <p class="card-text text-muted">
+                            Promoting physical fitness, teamwork, and healthy lifestyles through
+                            comprehensive sports and wellness programs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Faculty -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="bg-light rounded-4 p-4">
+                    <h3 class="fw-bold mb-3">Connect with Our Faculty</h3>
+                    <p class="text-muted mb-4">
+                        Our faculty members are always available to support student learning and development.
+                        Feel free to reach out for academic guidance or mentorship.
+                    </p>
+                    <a href="mailto:faculty@{{ school.domain }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contact Faculty
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
